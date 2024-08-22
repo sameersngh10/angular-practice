@@ -1,0 +1,27 @@
+<!-- using prperty binding method -->
+<input [id]="myId" type="text" value="sameer">
+<!-- bining string attribute with interpolation method and boolean attribute with property binding method -->
+<input [disabled]="isDisabled" id={{myId}} type="text" value="last name">
+<!-- property binding using (bind-atrribute name ) methods -->
+<input bind-disabled="isDisable" id={{myMail}} type="email" value="sameer@singh.com">
+<!-- boolean values only works with property binding...and interpolation only works for strings -->
+
+
+<!-- class Binding -->
+<h2 class ="text-success" >Sameer</h2><br>
+<h2 class="text-danger">Shivangi</h2><br>
+<h2 class="text-special">AYUSH</h2>
+<!-- class binding using class property -->
+<h2 [class] ="SuccessClass" >Sameer</h2><br>
+<h2 [class]="dangerClass">Shivangi</h2><br>
+<h2 [class]="SpecialClass">AYUSH</h2>
+
+<br>
+
+<!-- based on an expression either true or false -->
+<h2 [class.text-danger]="hasError">Vishal</h2>
+
+<!-- class binding with ngClass directive -->
+<h2 [ngClass]="MessageClass">IronMan</h2>
+
+

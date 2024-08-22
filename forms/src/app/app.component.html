@@ -1,0 +1,16 @@
+<router-outlet></router-outlet>
+
+<div [formGroup]="loginform">
+  <div class="row">
+    <div class="col-sm-4">
+      <label for="name">name</label>
+      <input type="text" placeholder="your name" formControlName="name" />
+    </div>
+    <div class="col-sm-4">
+      <label for="email">Email:</label>
+      <input type="email" placeholder="someone@example.com" />
+    </div>
+    <div class="col-sm-4"><label for=""></label> <input type="text" /></div>
+  </div>
+  <button (click)="OnClick()">Submit</button>
+</div>

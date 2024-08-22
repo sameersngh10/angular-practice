@@ -1,0 +1,21 @@
+<h3>Welcome, {{name }}</h3>
+<p>test works!</p>
+<h2>{{2+2}}</h2>
+<h2>{{"jai shree ram ,"+ name1}}</h2>
+{{"lenght of name = "+name.length}}<br>
+{{"lenght of name = "+name1.length}}<br>
+{{name1.toUpperCase()}}
+<h2>{{greetUSER()}}</h2>
+
+<!-- <li *ngFor="users of userlist">
+{{user.age}}</li> -->
+
+<!-- Style binding in angular -->
+<h2 [style.color]=" hasError ? 'red':'orange'">Jai shree ram</h2>
+
+<h2 [style.color]="ColHighlight">Jai shree ram 2</h2>
+
+<h2 [ngStyle]="headingStyle"> Jai Hanumanji</h2>
+
+<button (click)="OnClick($event)">Greet</button>{{greeting}}
+<button (click)="greeting='welcome, SK'">GREET MAster</button>
